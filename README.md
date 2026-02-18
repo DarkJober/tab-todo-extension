@@ -50,47 +50,6 @@ xcrun safari-web-extension-converter \
   --no-open --force
 ```
 
-## Publish This Project to GitHub
-
-### 1. Create an empty GitHub repository
-
-Example: `tab-todo-extensions`
-
-Create it **without** README/.gitignore/license (already present locally).
-
-### 2. Commit local files
-
-```bash
-git add .
-git commit -m "Initial commit: Tab ToDo Chrome + Safari"
-```
-
-### 3. Add remote
-
-HTTPS:
-
-```bash
-git remote add origin https://github.com/<YOUR_USERNAME>/tab-todo-extensions.git
-```
-
-or SSH:
-
-```bash
-git remote add origin git@github.com:<YOUR_USERNAME>/tab-todo-extensions.git
-```
-
-If `origin` already exists:
-
-```bash
-git remote set-url origin https://github.com/<YOUR_USERNAME>/tab-todo-extensions.git
-```
-
-### 4. Push
-
-```bash
-git branch -M main
-git push -u origin main
-```
 
 ## Notes
 
