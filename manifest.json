@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Tab ToDo",
+  "version": "1.0.0",
+  "description": "Convert current tab to ToDo tasks and manage them in popup.",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {}
+}

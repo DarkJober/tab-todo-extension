@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab ToDo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="row gap-sm">
+        <button id="addCurrentTabBtn" class="btn btn-primary" type="button">
+          Add current tab as ToDo
+        </button>
+        <button id="refreshBtn" class="btn" type="button">Refresh</button>
+      </header>
+      <p id="statusMessage" class="status-message" aria-live="polite"></p>
+
+      <section class="panel">
+        <label class="toggle">
+          <input id="autoCloseToggle" type="checkbox" />
+          <span>Close tab after adding</span>
+        </label>
+      </section>
+
+      <section class="panel">
+        <input id="searchInput" type="search" placeholder="Search tasks..." />
+
+        <div class="filters" role="tablist" aria-label="Task filters">
+          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="active" type="button">Active</button>
+          <button class="filter-btn" data-filter="done" type="button">Done</button>
+        </div>
+      </section>
+
+      <section class="panel list-panel">
+        <ul id="taskList" class="task-list"></ul>
+        <p id="emptyState" class="empty-state">No tasks found.</p>
+      </section>
+
+      <footer class="row">
+        <button id="clearCompletedBtn" class="btn btn-danger" type="button">Clear completed</button>
+      </footer>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
